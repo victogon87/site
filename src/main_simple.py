@@ -21,7 +21,7 @@ app.config['SECRET_KEY'] = 'sua_chave_secreta_muito_segura_aqui_123456789'
 app.config['JWT_SECRET_KEY'] = 'sua_chave_secreta_muito_segura_aqui_123456789'
 
 # Inicializar extensões
-CORS(app, origins="*")
+CORS(app, origins="https://sitefrontend-zs2h-1reg0dnwl-victor-goncalves-projects-0cffc5ea.vercel.app/login")
 jwt = JWTManager(app)
 
 # Dados em memória para demonstração
@@ -30,7 +30,7 @@ usuarios = [
         'id': 1,
         'nome': 'Administrador',
         'email': 'admin@secretaria.gov.br',
-        'senha_hash': generate_password_hash('admin123'),
+        'senha_hash': generate_password_hash('8738mv'),
         'nivel_acesso': 'administrador',
         'ativo': True
     },
